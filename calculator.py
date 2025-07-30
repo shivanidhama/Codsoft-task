@@ -23,14 +23,14 @@ def calculate():
 
         result_label.config(text=f"Result: {result}")
     except ValueError:
-        messagebox.showerror("Input Error", "Please enter valid numbers.")
+        messagebox.showerror("Input Error", "Please enter the valid numbers.")
     except ZeroDivisionError as zde:
         messagebox.showerror("Math Error", str(zde))
 
 # Create main window
 root = tk.Tk()
 root.title("Simple Calculator")
-root.geometry("300x250")
+root.geometry("300x260")
 
 # First number entry
 tk.Label(root, text="Enter first number:").pack(pady=5)
